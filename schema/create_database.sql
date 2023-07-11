@@ -29,36 +29,31 @@ CREATE TABLE course(
 	courseID INT AUTO_INCREMENT,
 	courseName VARCHAR(100) NOT NULL,
 	courseYEAR INT NOT NULL,
+	discipline VARCHAR(30) NOT NULL,
 	syllabus VARCHAR(100) NOT NULL,
 	PRIMARY KEY(courseID),
 	UNIQUE(courseName, courseYear)
 	);
 
-CREATE TABLE unit(
-	unitID INT AUTO_INCREMENT,
-	unitNumber INT NOT NULL,
-	unitName VARCHAR(100) NOT NULL,
-	learning_goals VARCHAR(100) NOT NULL,
-	PRIMARY KEY(unitID)
-	);
-
 CREATE TABLE learning_material(
 	materialID INT AUTO_INCREMENT,
+	unit VARCHAR(20),
 	materialType VARCHAR(30) NOT NULL,
 	materialName VARCHAR(30),
-	description VARCHAR(100),
 	dimension INT,
 	PRIMARY KEY(materialID)
 	);
 
 CREATE TABLE final_assessment(
 	assessmentID INT AUTO_INCREMENT,
-	assessmentType ENUM('Quiz', 'Project'),
+	assessmentType ENUM('Quiz', 'Project') NOT NULL,
 	assessmentName VARCHAR(50),
+	thresholdScore INT NOT NULL,
+	maxScore INT NOT NULL,
 	PRIMARY KEY(assessmentID)
 	);
 
-CREATE TABLE enrollment(
+CREATE TABLE enrolling(
 	student INT,
 	course INT,
 	enrollDate DATE,
@@ -82,29 +77,14 @@ CREATE TABLE teaching(
 CREATE TABLE learning(
 	course INT,
 	student INT,
-	unit INT,
+	learning_material INT,
 	accessDate DATE,
-	accessStart VARCHAR(10),
-	accessEnd VARCHAR(10),
-	nAccesses INT,
-	PRIMARY KEY(student, course, unit),
+	PRIMARY KEY(student, course, learning_material),
 	FOREIGN KEY(student)
 		REFERENCES student(studentID),
 	FOREIGN KEY(course)
 		REFERENCES course(courseID),
-	FOREIGN KEY(unit)
-		REFERENCES unit(unitID)
-	);
-
-CREATE TABLE using_resources(
-	unit INT,
-	material INT,
-	accessDate DATE,
-	nAccesses INT,
-	PRIMARY KEY(unit, material),
-	FOREIGN KEY(unit)
-		REFERENCES unit(unitID),
-	FOREIGN KEY(material)
+	FOREIGN KEY(learning_material)
 		REFERENCES learning_material(materialID)
 	);
 
@@ -112,11 +92,8 @@ CREATE TABLE grading(
 	student INT,
 	course INT,
 	assessment INT,
-	minScore INT,
-	maxScore INT,
+	score INT,
 	attemptDate DATE,
-	nAttempts INT,
-	completed BOOL
 	PRIMARY KEY(student, course, assessment),
 	FOREIGN KEY(student)
 		REFERENCES student(studentID),
