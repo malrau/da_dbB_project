@@ -17,6 +17,7 @@ CREATE TABLE student(
 
 CREATE TABLE instructor(
 	instructorID INT AUTO_INCREMENT,
+	role VARCHAR(30) NOT NULL,
 	firstName VARCHAR(30) NOT NULL,
 	lastName VARCHAR(30) NOT NULL,
 	genre ENUM('F', 'M', 'NOT BINARY') NOT NULL,
