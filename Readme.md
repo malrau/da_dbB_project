@@ -11,6 +11,7 @@ I plan to manage the DBMS by using the Python programming language.
 </p>
 
 <br>
+
 Database schema hypothesis
 --------------------------
 
@@ -24,10 +25,12 @@ The aim is to simulate data that reproduce the schema. The data are created prog
 The above concept is somewhat a simplification of the way I consider the full actual schema of this kind of database (learning platform). The two relationships: <i>grading</i> and <i>learning</i> link three entities each (<i>student</i>, <i>course</i> and <i>assessment</i> the first one, <i>student</i>, <i>course</i> and <i>learning material</i> the second one). It would probably be better if they were replaced by two distinct relationships: instead of only <i>grading</i> we could have one relationship linking <i>course</i> and <i>assessment</i> and another one linking <i>student</i> and <i>assessment</i>. This way we could have a full representation of each course and its assessment. 
 </p>
 
+
 <p>
 <h4>course - final assessment</h4>
 The way the concept is expressed at the moment, assessment is present in the <i>grading</i> relationship only if a student has actually undergone assessment in a given date, and there is no other relationship involving course and assessment.  So, if a student enrolled in a course has not undergone the course final assessment, the assessment data cannot be linked to the course data. Notice that the full assessment data is present in the assesssment table, but the can be linked to a course only through a relationship, but the only one is <i>grading</i> which stores data only for actual assessments undergone by students, not potential assessments.
 </p>
+
 
 <p>
 <h4>course - learning material</h4>
@@ -36,6 +39,7 @@ The same reasoning applies to the <i>learning</i> relationship. It stores connec
 
 
 <br>
+
 Full database schema
 --------------------
 
@@ -45,10 +49,12 @@ The full schema could be represented as follows:
 
 Here there are eleven constructs instead of nine (5 entities and 6 relationships).
 
+
 <p>
 <h4>course - learning material</h4>
 <i>course</i> is linked to <i>learning material</i> through a specific relationship (<i>using</i>), while <i>student</i> is linked to <i>learning material</i> through the <i>learning</i> relationship. While the <i>using</i> relationship between <i>course</i> and <i>learning material</i> stores the full set of links between a course and the learning material used within the course, the <i>learning</i> relationship stores only learning material that students have accessed to. Also, while in the <i>using</i> relationship learning materials are uniquely identified, in the <i>learning</i> relationship they might appear  more than once because students can access multiple times the same learning material or, better, more students can access the same learning material.
 </p>
+
 
 <p>
 <h4>course - final assessment</h4>
