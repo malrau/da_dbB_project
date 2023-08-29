@@ -1,240 +1,240 @@
-Algorithmic Toolbox 
-Design and Make Infographics (Project-Centered Course) 
-Cryptography I 
-Build Your First Android App (Project-Centered Course) 
-Divide and Conquer, Sorting and Searching, and Randomized Algorithms 
-Java for Android 
-An Introduction to Interactive Programming in Python (Part 1) 
-SQL for Data Science 
-Cloud Computing Concepts, Part 1 
-Autodesk Certified Professional: AutoCAD for Design and Drafting Exam Prep 
-Introduction to the Internet of Things and Embedded Systems 
-Fundamentals of Visualization with Tableau 
-Computer Architecture 
-Python Basics 
-AI For Everyone 
-Crash Course on Python 
-Introduction to Web Development 
-Programming Languages, Part A 
-Internet History, Technology, and Security 
-Google Cloud Big Data and Machine Learning Fundamentals 
-Front-End Web UI Frameworks and Tools: Bootstrap 4 
-Data Visualization with Python 
-Cybersecurity and Its Ten Domains 
-Database Management Essentials 
-Computer Science: Programming with a Purpose 
-Fundamentals of Graphic Design 
-Programming Fundamentals 
-Introducci\'f3n a Java 
-English for Career Development 
-Google Cloud Fundamentals: Core Infrastructure 
-Code Yourself! An Introduction to Programming 
-Introduction to HTML5 
-Design and Interpretation of Clinical Trials 
-Build a Modern Computer 
-Visual Elements of User Interface Design 
-How To Create a Website in a Weekend! (Project-Centered Course) 
-Python and Statistics for Financial Analysis 
-Cloud Computing Basics (Cloud 101) 
-Programming Foundations with JavaScript, HTML and CSS 
-Algorithms, Part II 
-Introduction to Google SEO 
-Agile with Atlassian Jira 
-Algorithms, Part I 
-Hadoop Platform and Application Framework 
-Introduction to Cybersecurity Tools & Cyber Attacks 
-Functional Programming Principles in Scala 
-Responsive Website Basics: Code with HTML, CSS, and JavaScript 
-HTML, CSS, and Javascript for Web Developers 
-Design Thinking for Innovation 
-Programming for Everybody (Getting Started with Python) 
-Introduction to Data Science in Python 
-Agile Software Development 
-Foundations of User Experience (UX) Design 
-Introduction to Programming with MATLAB 
-Fundamentals of GIS 
-Getting Started with AWS Machine Learning 
-Introduction to User Experience Design 
-Data Science Math Skills 
-Introduction to Calculus 
-Introduction to Mathematical Thinking 
-Introduction to Logic 
-English for Science, Technology, Engineering, and Mathematics 
-Model Thinking 
-Mathematics for Machine Learning: Linear Algebra 
-Writing in English at University 
-Teach English Now! Foundational Principles 
-Writing in the Sciences 
-English for Science, Technology, Engineering, and Mathematics 
-Spanish Vocabulary: Meeting People 
-Tricky American English Pronunciation 
-Grammar and Punctuation 
-English for Journalism 
-Communication Strategies for a Virtual Age 
-First Step Korean 
-Business Writing 
-Lesson | Small Talk & Conversational Vocabulary 
-English Composition I 
-How to Write a Resume (Project-Centered Course) 
-Speak English Professionally: In Person, Online & On the Phone 
-Chinese for Beginners 
-Miracles of Human Language: An Introduction to Linguistics 
-English for Career Development 
-Learn to Speak Korean 1 
-Perfect Tenses and Modals 
-Fundamentos de la escritura 
-Aprender 
-English for Business and Entrepreneurship 
-Introduction to Public Speaking 
-Teamwork Skills: Communicating Effectively in Groups 
-Introduction to Structured Query Language (SQL) 
-How to Write and Publish a Scientific Paper (Project-Centered Course) 
-Finding Purpose and Meaning In Life: Living for What Matters Most 
-The Addicted Brain 
-Creative Problem Solving 
-Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential 
-Dog Emotion and Cognition 
-Creative Thinking: Techniques and Tools for Success 
-Learning How to Learn: Powerful mental tools to help you master tough subjects 
-Psychological First Aid 
-A Life of Happiness and Fulfillment 
-Introduction to Psychology 
-Social Psychology 
-Creative Writing: The Craft of Plot 
-Positive Psychiatry and Mental Health 
-Miracles of Human Language: An Introduction to Linguistics 
-Preparing to Manage Human Resources 
-Excel/VBA for Creative Problem Solving, Part 1 
-Computer Science: Programming with a Purpose 
-Managing Emotions in Times of Uncertainty & Stress 
-Ser m\'e1s creativos 
-Influencing People 
-Mind Control: Managing Your Mental Health During COVID-19 
-Introductory Human Physiology 
-Positive Psychology 
-The Arts and Science of Relationships: Understanding Human Needs 
-The Science of Success: What Researchers Know that You Should Know 
-Introduction to Social Media Marketing 
-Financial Accounting Fundamentals 
-Fundamentos de Finanzas Empresariales 
-Introduction to Data Analytics for Business 
-Personal & Family Financial Planning 
-Brand Management: Aligning Business, Brand and Behaviour 
-Bitcoin and Cryptocurrency Technologies 
-Finance for Non-Finance Professionals 
-Introduction to Negotiation: A Strategic Playbook for Becoming a Principled and Persuasive Negotiator 
-Management of Fashion and Luxury Companies 
-Communication Strategies for a Virtual Age 
-Business Writing 
-Marketing Analytics 
-Excel aplicado a los negocios (Nivel Avanzado) 
-Financial Planning for Young Adults 
-Introduction to Personal Branding 
-Work Smarter, Not Harder: Time Management for Personal & Professional Productivity 
-Preparing to Manage Human Resources 
-Database Management Essentials 
-Understanding Financial Markets 
-Customer Analytics 
-Entrepreneurship 1: Developing the Opportunity 
-Introduction to Marketing 
-Marketing in a Digital World 
-Contabilidad para no contadores 
-Successful Negotiation: Essential Strategies and Skills 
-Private Equity and Venture Capital 
-Foundations of Digital Marketing and E-commerce 
-English for Business and Entrepreneurship 
-Python and Statistics for Financial Analysis 
-Foundations of Project Management 
-An Introduction to Consumer Neuroscience & Neuromarketing 
-Fundamentals of Project Planning and Management 
-Business English: Networking 
-Economics of Money and Banking 
-Financial Markets 
-Fundamentos de Excel para Negocios 
-Marketing Digital 
-Data-driven Decision Making 
-Leading Teams: Developing as a Leader 
-Blockchain Basics 
-Viral Marketing and How to Craft Contagious Content 
-Finanzas personales 
-The Strategy of Content Marketing 
-Competitive Strategy 
-Understanding Research Methods 
-Introduction to Engineering Mechanics 
-Wind Energy 
-Understanding the Brain: The Neurobiology of Everyday Life 
-Introduction to the Biology of Cancer 
-Introduction to Electronics 
-Understanding Einstein: The Special Theory of Relativity 
-Dog Emotion and Cognition 
-How Things Work: An Introduction to Physics 
-Introduction to Genetics and Evolution 
-Biology Meets Programming: Bioinformatics for Beginners 
-Animal Behaviour and Welfare 
-Chemistry 
-COVID-19 Contact Tracing 
-Stanford Introduction to Food and Health 
-Medical Neuroscience 
-Positive Psychiatry and Mental Health 
-Mind Control: Managing Your Mental Health During COVID-19 
-Mind Control: Managing Your Mental Health During COVID-19 
-Epidemiology: The Basic Science of Public Health 
-Introduction to the Biology of Cancer 
-Understanding Clinical Research: Behind the Statistics 
-Designing Your Personal Weight Loss Plan 
-Design and Interpretation of Clinical Trials 
-Introduction to Probability and Data with R 
-Exploratory Data Analysis 
-Understanding Clinical Research: Behind the Statistics 
-Econometrics: Methods and Applications 
-Foundations: Data, Data, Everywhere 
-Basic Statistics 
-Introduction to Statistics 
-Python and Statistics for Financial Analysis 
-Bayesian Statistics: From Concept to Data Analysis 
-Modern Art & Ideas 
-Guitar for Beginners 
-Communication Strategies for a Virtual Age 
-An Introduction to American Law 
-Moral Foundations of Politics 
-Introduction to Classical Music 
-Fundamentals of Music Theory 
-Indigenous Canada 
-Greek and Roman Mythology 
-Introduction to International Criminal Law 
-Introduction to Philosophy 
-In the Studio: Postwar Abstract Painting 
-The Modern World, Part One: Global History 
-Cameras, Exposure, and Photography 
-Think Again I: How to Understand Arguments 
-Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning 
-Gamification 
-Game Theory 
-Everyday Excel, Part 1 
-Supervised Machine Learning: Regression and Classification 
-Introduction to Sustainability 
-Machine Learning for All 
-Introduction to Data Analytics 
-Introduction to Systematic Review and Meta-Analysis 
-Introduction to Big Data 
-Organizational Analysis 
-Supply Chain Logistics 
-Child Nutrition and Cooking 
-Introduction to Self-Driving Cars 
-Mastering Data Analysis in Excel 
-Initiating and Planning Projects 
-What is Social? 
-Human-Centered Design: an Introduction 
-Machine Learning Foundations: A Case Study Approach 
-Introduction to Machine Learning 
-Neural Networks and Deep Learning 
-What is Data Science? 
-A Crash Course in Data Science 
-Learning to Teach Online 
-Science of Exercise 
-Learn to Program: The Fundamentals 
-Vital Signs: Understanding What the Body Is Telling Us 
-Technical Support Fundamentals 
-Introduction to Data Analysis Using Excel 
-Everyday Parenting: The ABCs of Child Rearing 
-Excel Skills for Business: Essentials 
+Hadoop Platform and Application Framework
+Autodesk Certified Professional: AutoCAD for Design and Drafting Exam Prep
+Python and Statistics for Financial Analysis
+Computer Science: Programming with a Purpose
+Algorithms, Part I
+Visual Elements of User Interface Design
+Programming Fundamentals
+Python Basics
+Build a Modern Computer
+Cloud Computing Basics (Cloud 101)
+Internet History, Technology, and Security
+Fundamentals of Visualization with Tableau
+Agile Software Development
+Cloud Computing Concepts, Part 1
+Introduction to the Internet of Things and Embedded Systems
+Fundamentals of GIS
+Cybersecurity and Its Ten Domains
+SQL for Data Science
+An Introduction to Interactive Programming in Python (Part 1)
+Divide and Conquer, Sorting and Searching, and Randomized Algorithms
+Algorithms, Part II
+Cryptography I
+Programming Languages, Part A
+HTML, CSS, and Javascript for Web Developers
+Introduction to Programming with MATLAB
+Google Cloud Big Data and Machine Learning Fundamentals
+How To Create a Website in a Weekend! (Project-Centered Course)
+Introduction to Google SEO
+Introduction to Cybersecurity Tools & Cyber Attacks
+Design and Make Infographics (Project-Centered Course)
+Foundations of User Experience (UX) Design
+Java for Android
+Introducci\'f3n a Java
+Design and Interpretation of Clinical Trials
+Introduction to Data Science in Python
+Design Thinking for Innovation
+Crash Course on Python
+Data Visualization with Python
+Build Your First Android App (Project-Centered Course)
+Introduction to User Experience Design
+Programming Foundations with JavaScript, HTML and CSS
+Programming for Everybody (Getting Started with Python)
+Computer Architecture
+Front-End Web UI Frameworks and Tools: Bootstrap 4
+Agile with Atlassian Jira
+Fundamentals of Graphic Design
+Introduction to HTML5
+AI For Everyone
+Google Cloud Fundamentals: Core Infrastructure
+Algorithmic Toolbox
+Functional Programming Principles in Scala
+Code Yourself! An Introduction to Programming
+English for Career Development
+Getting Started with AWS Machine Learning
+Responsive Website Basics: Code with HTML, CSS, and JavaScript
+Database Management Essentials
+Introduction to Web Development
+Introduction to Calculus
+Data Science Math Skills
+Model Thinking
+Introduction to Mathematical Thinking
+English for Science, Technology, Engineering, and Mathematics
+Introduction to Logic
+Mathematics for Machine Learning: Linear Algebra
+Introduction to Public Speaking
+Writing in English at University
+English for Journalism
+Learn to Speak Korean 1
+Lesson | Small Talk & Conversational Vocabulary
+Teamwork Skills: Communicating Effectively in Groups
+Communication Strategies for a Virtual Age
+Spanish Vocabulary: Meeting People
+Introduction to Structured Query Language (SQL)
+English Composition I
+Perfect Tenses and Modals
+Business Writing
+How to Write a Resume (Project-Centered Course)
+Speak English Professionally: In Person, Online & On the Phone
+Tricky American English Pronunciation
+Miracles of Human Language: An Introduction to Linguistics
+Teach English Now! Foundational Principles
+How to Write and Publish a Scientific Paper (Project-Centered Course)
+English for Science, Technology, Engineering, and Mathematics
+English for Business and Entrepreneurship
+First Step Korean
+Aprender
+Grammar and Punctuation
+Chinese for Beginners
+Writing in the Sciences
+English for Career Development
+Fundamentos de la escritura
+Learning How to Learn: Powerful mental tools to help you master tough subjects
+Computer Science: Programming with a Purpose
+Social Psychology
+Finding Purpose and Meaning In Life: Living for What Matters Most
+Ser m\'e1s creativos
+Positive Psychiatry and Mental Health
+The Arts and Science of Relationships: Understanding Human Needs
+Excel/VBA for Creative Problem Solving, Part 1
+Introductory Human Physiology
+Influencing People
+Miracles of Human Language: An Introduction to Linguistics
+Creative Writing: The Craft of Plot
+Creative Problem Solving
+A Life of Happiness and Fulfillment
+The Science of Success: What Researchers Know that You Should Know
+Introduction to Psychology
+The Addicted Brain
+Managing Emotions in Times of Uncertainty & Stress
+Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential
+Dog Emotion and Cognition
+Mind Control: Managing Your Mental Health During COVID-19
+Positive Psychology
+Creative Thinking: Techniques and Tools for Success
+Preparing to Manage Human Resources
+Psychological First Aid
+Business English: Networking
+Python and Statistics for Financial Analysis
+Excel aplicado a los negocios (Nivel Avanzado)
+Customer Analytics
+Introduction to Negotiation: A Strategic Playbook for Becoming a Principled and Persuasive Negotiator
+Competitive Strategy
+Fundamentos de Finanzas Empresariales
+Introduction to Marketing
+Data-driven Decision Making
+Fundamentals of Project Planning and Management
+Financial Markets
+Entrepreneurship 1: Developing the Opportunity
+Marketing in a Digital World
+Understanding Financial Markets
+Marketing Digital
+Viral Marketing and How to Craft Contagious Content
+Marketing Analytics
+Communication Strategies for a Virtual Age
+Contabilidad para no contadores
+Blockchain Basics
+Business Writing
+Financial Planning for Young Adults
+Finanzas personales
+Finance for Non-Finance Professionals
+Foundations of Digital Marketing and E-commerce
+Financial Accounting Fundamentals
+Brand Management: Aligning Business, Brand and Behaviour
+Successful Negotiation: Essential Strategies and Skills
+Economics of Money and Banking
+English for Business and Entrepreneurship
+Work Smarter, Not Harder: Time Management for Personal & Professional Productivity
+Introduction to Social Media Marketing
+The Strategy of Content Marketing
+Bitcoin and Cryptocurrency Technologies
+Private Equity and Venture Capital
+Foundations of Project Management
+Introduction to Data Analytics for Business
+Introduction to Personal Branding
+Preparing to Manage Human Resources
+Management of Fashion and Luxury Companies
+Leading Teams: Developing as a Leader
+An Introduction to Consumer Neuroscience & Neuromarketing
+Database Management Essentials
+Personal & Family Financial Planning
+Fundamentos de Excel para Negocios
+Introduction to Engineering Mechanics
+Understanding the Brain: The Neurobiology of Everyday Life
+Dog Emotion and Cognition
+Wind Energy
+Understanding Einstein: The Special Theory of Relativity
+Introduction to Electronics
+Animal Behaviour and Welfare
+How Things Work: An Introduction to Physics
+Chemistry
+Introduction to Genetics and Evolution
+Introduction to the Biology of Cancer
+Biology Meets Programming: Bioinformatics for Beginners
+Understanding Research Methods
+COVID-19 Contact Tracing
+Stanford Introduction to Food and Health
+Medical Neuroscience
+Positive Psychiatry and Mental Health
+Mind Control: Managing Your Mental Health During COVID-19
+Mind Control: Managing Your Mental Health During COVID-19
+Epidemiology: The Basic Science of Public Health
+Introduction to the Biology of Cancer
+Understanding Clinical Research: Behind the Statistics
+Designing Your Personal Weight Loss Plan
+Design and Interpretation of Clinical Trials
+Introduction to Statistics
+Python and Statistics for Financial Analysis
+Bayesian Statistics: From Concept to Data Analysis
+Introduction to Probability and Data with R
+Exploratory Data Analysis
+Foundations: Data, Data, Everywhere
+Basic Statistics
+Econometrics: Methods and Applications
+Understanding Clinical Research: Behind the Statistics
+Guitar for Beginners
+Moral Foundations of Politics
+Introduction to Classical Music
+Communication Strategies for a Virtual Age
+Modern Art & Ideas
+Indigenous Canada
+Introduction to Philosophy
+In the Studio: Postwar Abstract Painting
+An Introduction to American Law
+Greek and Roman Mythology
+The Modern World, Part One: Global History
+Introduction to International Criminal Law
+Cameras, Exposure, and Photography
+Fundamentals of Music Theory
+Think Again I: How to Understand Arguments
+Learn to Program: The Fundamentals
+Everyday Parenting: The ABCs of Child Rearing
+Introduction to Systematic Review and Meta-Analysis
+Technical Support Fundamentals
+What is Social?
+Science of Exercise
+Machine Learning Foundations: A Case Study Approach
+Vital Signs: Understanding What the Body Is Telling Us
+Supervised Machine Learning: Regression and Classification
+Machine Learning for All
+Introduction to Data Analysis Using Excel
+Excel Skills for Business: Essentials
+Supply Chain Logistics
+Mastering Data Analysis in Excel
+Organizational Analysis
+Introduction to Big Data
+A Crash Course in Data Science
+Introduction to Self-Driving Cars
+Introduction to Sustainability
+Introduction to Machine Learning
+Child Nutrition and Cooking
+Initiating and Planning Projects
+What is Data Science?
+Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning
+Everyday Excel, Part 1
+Gamification
+Game Theory
+Learning to Teach Online
+Introduction to Data Analytics
+Neural Networks and Deep Learning
+Human-Centered Design: an Introduction
