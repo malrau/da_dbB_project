@@ -64,3 +64,11 @@ The same is true for the new relationship between <i>course</i> and <i>final ass
 <p>
 Anyway, for the purpose of the project it is not necessary, in my view, to build the full schema. The first schema hypothesis can be seen as a simplification of the full schema allowing to perform queries complex enough for the project assignment demands. The range of queries is more limited than that of the full schema: the full schema would allow recovering all data connected to each course of the platform (assignments and learning materials), but, all in all, it is more interesting to know which material has been accessed by a student, or if a student has performed the final assignment of a course, and these kinds of queries (involving three entities) are possible with this schema.
 </p>
+
+
+<br>
+
+Final dataset (csv file)
+------------------------
+
+The final output of the database building procedure (stored in the FakeDB folder), according to the project guidelines, must be a csv file of 1 million records to be imported into each of the indicated DBMSs. I don't need to import every entity or relationship in my relational schema, it is sufficient to import a unique csv file storing enoug information. I can use the <i>learning</i> relationship in my relational schema to gather information on students, on courses and on the learning materials. These information (attributes) can all be stored into a csv file which will have a number of records equivalent to those in the <i>learning</i> table (more then 1 million) and as many columns (attributes) as those present in the <i>student</i> table, in the <i>course</i> table and in the <i>learning_material</i> table (plus the unique attribute in the <i>learning</i> table). After importing the csv into the datasets, I can run queries based on the attributes of the entities involved (students' gender or nationality, courses' discipline, types of learning materials accessed, etc.).
