@@ -1,0 +1,107 @@
+# Reference docker compose specification:
+#		https://docs.docker.com/compose/compose-file/compose-file-v3/
+#		https://github.com/compose-spec/compose-spec/blob/master/spec.md
+#		https://docs.docker.com/engine/reference/commandline/compose/
+#		https://docs.docker.com/compose/networking/
+
+# Reference Docker Hub pages:
+#		https://hub.docker.com/r/redis/redis-stack
+
+version: '3.1'
+
+services:
+
+  dbms:
+    image: redis/redis-stack:latest
+    container_name: redis-stack_main
+    volumes:
+      - type: bind
+        source: dbms
+        target: /data
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+      - "8001:8001"
+    environment:
+      - REDIS_ARGS = "--requirepass myPassword"
+
+  dbms2:
+    image: redis/redis-stack:latest
+    container_name: redis-stack_second
+    volumes:
+      - type: bind
+        source: dbms2
+        target: /data
+    restart: unless-stopped
+    ports:
+      - "6382:6379"
+      - "8002:8001"
+    environment:
+      - REDIS_ARGS = "--requirepass myPassword"
+
+  dbms3:
+    image: redis/redis-stack:latest
+    container_name: redis-stack_third
+    volumes:
+      - type: bind
+        source: dbms3
+        target: /data
+    restart: unless-stopped
+    ports:
+      - "6383:6379"
+      - "8003:8001"
+    environment:
+      - REDIS_ARGS = "--requirepass myPassword"
+
+  dbms4:
+    image: redis/redis-stack:latest
+    container_name: redis-stack_fourth
+    volumes:
+      - type: bind
+        source: dbms4
+        target: /data
+    restart: unless-stopped
+    ports:
+      - "6384:6379"
+      - "8004:8001"
+    environment:
+      - REDIS_ARGS = "--requirepass myPassword"
+
+############################
+### FURTHER INSTRUCTIONS ###
+############################
+
+### 1) CREATE REDIS AND REDISINSIGHT CONTAINERS ###
+# To create the redis containers, from the Terminal, navigate
+# to the folder where this file has been saved, then digit the
+# command: 
+#		docker compose up
+# or, if the file has not the standard docker-compose.yml name, digit:
+#		docker compose -f REDIS-STACK_docker-compose.yml up (start, stop...)
+# Once the containers have been created for the first time,
+# it is sufficient to digit:
+#		docker compose start
+# to start them again (use stop in place of start to stop the
+# container, rm to delete the container, down to close and
+# delete the container)
+
+### 2) CONNECT TO Redis FROM THE BROWSER ###
+# Then connect to RedisInsight from the browser at the address:
+#		http://localhost:8001
+
+### 3) CONNECT TO Redis FROM THE COMMAND LINE ###
+# One could also run a bash shell within the redis container:
+#		docker exec -it redis-stack_main bash
+# The shell will display the user in the form: 'root@d2a375b56d05:/#'
+# To run Redis from the shell and authenticate digit:
+#		redis-cli
+# redis-cli is the redis command line interface. By default redis
+# accepts access with no security and has a single user defined, called
+# default. Executing the command ACL LIST in a freshly started,
+# defaults-configured Redis instance will return the following:
+# 		1) "user default on nopass ~* &* +@all"
+# which means that the default user is configured to be active (on),
+# to require no password (nopass), to access every possible key (~*) and
+# Pub/Sub channel (&*), and be able to call every possible command (+@all)
+# can be set with the SETUSER and AUTH commands
+# Recall that ACL stands for Access Control List

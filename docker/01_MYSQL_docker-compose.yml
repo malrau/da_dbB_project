@@ -1,0 +1,114 @@
+# Reference docker compose specification:
+#		https://docs.docker.com/compose/compose-file/compose-file-v3/
+#		https://github.com/compose-spec/compose-spec/blob/master/spec.md
+#		https://docs.docker.com/engine/reference/commandline/compose/
+#		https://docs.docker.com/compose/networking/
+
+# Reference Docker Hub pages:
+#		https://hub.docker.com/_/mysql/
+#		https://hub.docker.com/_/php/
+#		https://hub.docker.com/_/phpmyadmin
+
+# Use root as user credential (password is set in the environment
+# variable MYSQL_ROOT_PASSWORD of the dbms service)
+
+version: '3.1'
+
+services:
+
+  dbms:
+    image: mysql:latest
+    container_name: mysql_main
+    volumes:
+      - type: bind								  # bind mount
+        source: /Users/mau/mysql_database/dbms	  # local folder must already exist
+        target: /var/lib/mysql					  # default mysql folders structure
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: myPassword
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_main
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: dbms
+
+  php-apache-environment1:
+    image: php:8.0-apache
+    container_name: php-apache_comics
+    volumes:
+      - type: bind
+        source: /Users/mau/mysql_database/htdocs/developers/webapp_comics
+        target: /var/www/html
+    ports:
+      - "8000:80"
+
+  php-apache-environment2:
+    image: php:8.0-apache
+    container_name: php-apache_spese
+    volumes:
+      - type: bind
+        source: /Users/mau/mysql_database/htdocs/developers/webapp_spese
+        target: /var/www/html
+    ports:
+      - "8010:80"
+
+############################
+### FURTHER INSTRUCTIONS ###
+############################
+
+### 1) CREATE WEB-PROGRAMMING ENVIRONMENT USING ###
+### MYSQL, PHP APACHE AND PHPMYADMIN CONTAINERS ###
+# To create the three containers, from the Terminal, navigate
+# to the folder where this file has been saved, then digit the
+# command: 
+#		docker compose up
+# or, if the file has not the standard docker-compose.yml name:
+#		docker compose -f MYSQL_docker-compose.yml up (start, stop...)
+# Once the containers have been created for the first time,
+# it is sufficient to digit:
+#		docker compose start
+# to start them again (use stop in place of start to stop the
+# containers, rm to delete the containers, down to close and
+# delete the containers)
+
+### 2) CONNECT TO MYSQL FROM THE COMMAND LINE ###
+# Then connect to the MySQL server by running it from a bash shell
+# within the MySQL container:
+#		docker exec -it mysql_main mysql -uroot -pmyPassword
+# The shell will connect directly to the MySQL server after
+# having input the password (which is set in the environment
+# variable MYSQL_ROOT_PASSWORD in the dbms service of the
+# docker-compose.yml)
+
+### 3) IMPORT .sql FILE FROM MYSQL SERVER ###
+# To run an .sql file and execute its SQL commands one must not be
+# logged in MySQL. The following command must be run from the bash
+# shell of the MySQL container:
+#		docker exec -i mysql_main mysql -uroot -p'myPassword' < /some/path/on/your/host/create_database.sql
+
+### 4) CONNECT TO MYSQL FROM PHPMYADMIN ###
+# One could also connect to the MySQL server from phpMyAdmin
+# from the browser at the address:
+#		http://localhost:8080
+
+### 5) RUN A PHP APACHE BASH SHELL ###
+# One could also run a bash shell within the php-apache container:
+#		docker exec -it php-apache_comics bash
+#		docker exec -it php-apache_spese bash
+# This is specifically useful to install any required php extensions
+# like mysqli (it stands for MySQL improved) a relational database
+# driver used in the PHP scripting language to provide an interface
+# with MySQL servers and databases
+#		docker-php-ext-install mysqli
+# Restart the php-apache container after installing the extension in
+# order to use it
+
+### 6) CONNECT TO MYSQL FROM A WEB APPLICATION ###
+# In mysqli_connect() the $dbhostname must be the name of the mysql
+# service as set in the docker-compose.yml ('dbms', in the present case)

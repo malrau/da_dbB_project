@@ -1,0 +1,84 @@
+# Reference docker compose specification:
+#		https://docs.docker.com/compose/compose-file/compose-file-v3/
+#		https://github.com/compose-spec/compose-spec/blob/master/spec.md
+#		https://docs.docker.com/engine/reference/commandline/compose/
+#		https://docs.docker.com/compose/networking/
+
+# Reference Docker Hub pages:
+#		https://hub.docker.com/_/mongo
+#		https://hub.docker.com/_/mongo-express
+
+version: '3.1'
+
+services:
+
+  dbms:
+    image: mongo
+    container_name: mongodb_main
+    volumes:
+#      - mongo_db_volume:/data/db
+#      - mongo_config_volume:/data/configdb
+#								  the above lines would be for named
+#								  volumes, but I use bind mounts
+      - type: bind				# bind mount
+        source: dbms/db			# local folder for db
+        target: /data/db		# default MongoDB folder
+      - type: bind				# bind mount
+        source: dbms/configdb	# local folder for configdb
+        target: /data/configdb	# default configdb folder
+    restart: unless-stopped
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: myPassword
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express_main
+    restart: unless-stopped
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: myPassword
+      ME_CONFIG_MONGODB_URL: mongodb://root:root@dbms:27017/
+
+# volumes:
+#  mongo_db_volume:
+#  mongo_config_volume
+#				the above lines are required for named volumes
+#				not for bind mounts
+
+############################
+### FURTHER INSTRUCTIONS ###
+############################
+
+### 1) CREATE MONGODB AND MONGO-EXPRESS CONTAINERS ###
+# To create the mongo containers, from the Terminal, navigate
+# to the folder where this file has been saved, then digit the
+# command: 
+#		docker compose up
+# or, if the file has not the standard docker-compose.yml name, digit:
+#		docker compose -f MONGODB_docker-compose.yml up (start, stop...)
+# Once the containers have been created for the first time,
+# it is sufficient to digit:
+#		docker compose start
+# to start them again (use stop in place of start to stop the
+# container, rm to delete the container, down to close and
+# delete the container)
+
+### 2) CONNECT TO MONGODB FROM THE BROWSER ###
+# Then connect to Mongo-Express from the browser at the address:
+#		http://localhost:8081
+
+### 3) CONNECT TO MONGODB FROM THE COMMAND LINE ###
+# One could also run a bash shell within the mongo container:
+#		docker exec -it mongodb_main bash
+# The shell will display the user in the form: 'root@67f8990acde1:/#'
+# To run MongoDB from the shell and authenticate digit:
+#		mongosh --username root --password myPassword
+# mongosh is the mongo shell, username and password are root/root
+# by default, but they can be set in the environment variables
+# MONGO_INITDB_ROOT_USERNAME and MONGO_INITDB_ROOT_PASSWORD
+# of the docker-compose.yml

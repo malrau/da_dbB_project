@@ -1,0 +1,136 @@
+# Reference docker compose specification:
+#		https://docs.docker.com/compose/compose-file/compose-file-v3/
+#		https://github.com/compose-spec/compose-spec/blob/master/spec.md
+#		https://docs.docker.com/engine/reference/commandline/compose/
+#		https://docs.docker.com/compose/networking/
+
+# Reference Docker Hub pages:
+#		https://hub.docker.com/_/neo4j
+
+# neo4j + docker compose
+#		https://thibaut-deveraux.medium.com/how-to-install-neo4j-with-docker-compose-36e3ba939af0
+
+# Use neo4j/neo4j as user/password credentials
+version: '3.1'
+
+# neo4j instance 1
+services:
+
+  dbms:
+    image: neo4j:latest
+    container_name: neo4j_main
+    volumes:
+      - type: bind
+        source: dbms
+        target: /data
+      - type: bind
+        source: dbms/logs
+        target: /logs
+    restart: unless-stopped
+    ports:
+      - "7474:7474" # HTTP access from outside the container
+      - "7687:7687" # Bolt protocol acces
+    environment:
+      - NEO4J_AUTH=neo4j/myPassword
+      - NEO4JLABS_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+
+#  neo4j instance 2
+
+  dbms2:
+    image: neo4j:latest
+    container_name: neo4j_second
+    volumes:
+      - type: bind
+        source: dbms2
+        target: /data
+      - type: bind
+        source: dbms2/logs
+        target: /logs
+    restart: unless-stopped
+    ports:
+      - "7475:7474" # HTTP access from outside the container
+      - "7692:7687" # Bolt protocol acces
+    environment:
+      - NEO4J_AUTH=neo4j/myPassword
+      - NEO4JLABS_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+
+
+# neo4j instance 3
+
+  dbms3:
+    image: neo4j:latest
+    container_name: neo4j_third
+    volumes:
+      - type: bind
+        source: dbms3
+        target: /data
+      - type: bind
+        source: dbms3/logs
+        target: /logs
+    restart: unless-stopped
+    ports:
+      - "7476:7474" # HTTP access from outside the container
+      - "7693:7687" # Bolt protocol acces
+    environment:
+      - NEO4J_AUTH=neo4j/myPassword
+      - NEO4JLABS_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+
+
+# neo4j instance 4
+
+  dbms4:
+    image: neo4j:latest
+    container_name: neo4j_fourth
+    volumes:
+      - type: bind
+        source: dbms4
+        target: /data
+      - type: bind
+        source: dbms4/logs
+        target: /logs
+    restart: unless-stopped
+    ports:
+      - "7477:7474" # HTTP access from outside the container
+      - "7694:7687" # Bolt protocol acces
+    environment:
+      - NEO4J_AUTH=neo4j/myPassword
+      - NEO4JLABS_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+
+############################
+### FURTHER INSTRUCTIONS ###
+############################
+
+### 1) CREATE NEO4J CONTAINER ###
+# To create the neo4j container, from the Terminal, navigate
+# to the folder where this file has been saved, then digit the
+# command: 
+#		docker compose up
+# or, if the file has not the standard docker-compose.yml name, digit:
+#		docker compose -f NEO4J_docker-compose.yml up (start, stop...)
+# Once the container has been created for the first time,
+# it is sufficient to digit:
+#		docker compose start
+# to start it again (use stop in place of start to stop the
+# container, rm to delete the container, down to close and
+# delete the container)
+
+### 2) CONNECT TO NEO4J FROM THE BROWSER ###
+# Then connect to neo4j from the browser at the address:
+#		http://localhost:7474
+
+### 3) CONNECT TO NEO4J FROM THE COMMAND LINE ###
+# One could also run a cypher shell within the neo4j container:
+#		docker exec -it neo4j_main cypher-shell -u neo4j -p neo4j
+# The shell will display the user in the form: 'neo4j@neo4j'
+
+### 4) APOC PLUGIN
+# The Apoc plugin is useful, among other things, to allow reducing
+# the load determined when using the LOAD CSV command for importing
+# large amounts of data (in terms of nodes and relationships).
+# In this case use the following command from cypher:
+#       CALL apoc.periodic.iterate(" LOAD CSV ... ",
+#            {batchSize: 10000, parallel: false});

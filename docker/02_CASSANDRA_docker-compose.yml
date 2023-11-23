@@ -1,0 +1,42 @@
+# Reference docker compose specification:
+#		https://docs.docker.com/compose/compose-file/compose-file-v3/
+#		https://github.com/compose-spec/compose-spec/blob/master/spec.md
+#		https://docs.docker.com/engine/reference/commandline/compose/
+#		https://docs.docker.com/compose/networking/
+
+# Reference Docker Hub pages:
+#		https://hub.docker.com/_/cassandra
+
+version: '3.1'
+
+services:
+
+  dbms:
+    image: cassandra:latest
+    container_name: cassandra_main
+    volumes:
+      - type: bind
+        source: dbms
+        target: /var/lib/cassandra
+#      - type: bind
+#        source: config
+#        target: /etc/cassandra
+    restart: unless-stopped
+    ports:
+      - "9042:9042"
+
+
+############################
+### FURTHER INSTRUCTIONS ###
+############################
+
+### 1) CONNECT TO CASSANDRA FROM THE COMMAND LINE ###
+# One could also run a bash shell within the cassandra container:
+#		docker exec -it cassandra_main bash
+# The shell will display the user in the form: 'root@41509cb96500:/#'
+# To run Cassandra from the shell and authenticate digit:
+#		cqlsh cassandra_main -u 'cassandra' -p 'myPassword';
+# cqlsh is the shell for the Cassandra Query Language (CQL), 
+# username and password cannot be set through environment variables,
+# at least for containers created from the Cassandra Docker official
+# image
